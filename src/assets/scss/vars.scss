@@ -1,0 +1,53 @@
+
+
+// ==================== FONTS ========================
+$base-font-family: "Inter UI", -apple-system, BlinkMacSystemFont,  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell","Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+$interface-font-family: "Inter UI", -apple-system, BlinkMacSystemFont,  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell","Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+$secondary-font-family: "Montserrat", -apple-system, BlinkMacSystemFont,  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell","Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+$force-mac-font-family: -apple-system, BlinkMacSystemFont,"Inter UI",  "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell","Fira Sans", "Droid Sans", "Helvetica Neue",sans-serif;
+
+$font-family-base: $base-font-family;
+$font-size-base: 1.1rem;
+/// Custom Pastel Colors
+$pastel-primary:   #A8E6CF;  // mint
+$pastel-secondary: #DCEDC1;  // light green
+$pastel-info:      #FFD3B6;  // light peach
+$pastel-success:   #FFAAA5;  // salmon
+$pastel-warning:   #FF8B94;  // light red
+$pastel-danger:    #FF5A5F;  // darker red
+$pastel-light:     #DCCCE7;  // lavender
+$pastel-dark:      #957DAD;  // muted purple
+
+// Assign the pastel colors to Bootstrap's color variables
+$primary:   $pastel-primary;
+$secondary: $pastel-secondary;
+$info:      $pastel-info;
+$success:   $pastel-success;
+$warning:   $pastel-warning;
+$danger:    $pastel-danger;
+$light:     $pastel-light;
+$dark:      $pastel-dark;
+
+// Modern Aesthetics Adjustments
+
+// Rounded Corners
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+$border-radius-sm: 0.25rem;
+
+// Soft borders
+$border-width: 1px;
+$border-color: rgba(0, 0, 0, 0.1);
+
+// Box Shadows
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+$btn-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+
+// Font and Typography
+$font-weight-bold: 500;
+$headings-font-weight: 500;
+$line-height-base: 1.6;
+
+// Transition for smoother animations
+$transition-base: all 0.3s ease-in-out;
+
