@@ -17,6 +17,10 @@
     "@popperjs/core": "^2.11.8",
     "alpinejs": "^3.13.0",
     "bootstrap": "^5.3.1",
-    "path": "^0.12.7"
+    "bootstrap-icons": "^1.11.1",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "pinecone-router": "^3.1.1",
+    "pinecone-router-middleware-views": "^3.0.3"
   }
 }

@@ -1,16 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <div id="bootstrap">
-
-    </div>
-    <script type="module" src="main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="assets/img/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>A Vite-Alpine-Bootstrap-Boilerplate</title>
+</head>
+<body class="d-flex flex-column h-100">
+<!-- Templates -->
+<div x-data>
+    <template x-route="/"  x-view="['/layouts/base.html', {path:'/pages/home.html', selector:'#content'}]">></template>
+    <template x-route="/about" x-view="['/layouts/base.html', {path:'/pages/about.html', selector:'#content'}]"></template>
+    <template x-route="/contact" x-view="['/layouts/base.html', {path:'/pages/contact.html', selector:'#content'}]"></template>
+    <!-- the error pages handler -->
+    <template x-route="notfound"  x-view="['/layouts/base.html', {path:'/pages/404.html', selector:'#content'}]"></template>
+    <!-- Auth pages -->
+    <template x-route="register"
+            x-view="['/layouts/auth.html', {path:'/pages/register.html', selector:'#content'}]">
+    </template>
+    <template x-route="login"
+              x-view="['/layouts/auth.html', {path:'/pages/login.html', selector:'#content'}]">
+    </template>
+</div>
+<!-- Templates -->
+<!-- Container for the app -->
+<div id="app">
+</div>
+<!-- Container for the app -->
+</body>
+<script type="module" src="main.js"></script>
 </html>
