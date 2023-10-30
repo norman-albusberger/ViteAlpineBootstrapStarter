@@ -8,19 +8,66 @@
 ![npm](https://img.shields.io/npm/v/vite)
 ![npm](https://img.shields.io/npm/v/bootstrap)
 
+## 🌟 Featured Technologies
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://vitejs.dev/">
+        <img src="https://vitejs.dev/logo-with-shadow.png" alt="Vite" width="50" />
+        <br>Vite
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://alpinejs.dev/">
+        <img src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS" width="50" />
+        <br>AlpineJS
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://getbootstrap.com/">
+        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png" alt="Bootstrap" width="50" />
+        <br>Bootstrap
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/pinecone-router/router">
+        <img src="https://avatars.githubusercontent.com/u/83432496?s=200&v=4" alt="Pinecone Router" width="50" />
+        <br>Pinecone Router
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://icons.getbootstrap.com/">
+        <img src="https://icons.getbootstrap.com/assets/img/icons-hero@2x.png" alt="Bootstrap Icons" width="50" />
+        <br>Bootstrap Icons
+      </a>
+    </td>
+
+  </tr>
+</table>
+
 
 This boilerplate is a starting point for web applications utilizing Vite, AlpineJS, and Bootstrap. It comes pre-configured with a suite of development tools and libraries to speed up your development process.
 
 ## Features
 
-- **Vite** for blazing fast development and build process.
-- **AlpineJS** for lean and powerful reactive components.
-- **Bootstrap** for modern and responsive styling.
-- **Pinecone Router** for SPA navigation.
-- **Bootstrap Icons** for scalable vector icons.
-- **NProgress** for smooth progress bars.
-- Integrated **SVGR** for importing SVG as React components.
+- **[Vite](https://vitejs.dev/)** - A build tool that boasts lightning-fast cold server start, blazing fast hot updates, and rich features. It uses Rollup for bundling and ES modules for instant updates, making the development and build process incredibly efficient.
 
+- **[AlpineJS](https://alpinejs.dev/)** - A minimal JavaScript framework for composing JavaScript behavior in your HTML. It offers you the reactive and declarative nature of big frameworks like Vue or React at a much lower cost.
+
+- **[Bootstrap](https://getbootstrap.com/)** - The world's most popular front-end component library. Bootstrap is an open-source toolkit for developing with HTML, CSS, and JS. It provides responsive design, powerful plugins, and a plethora of components to kickstart web development.
+
+- **[Pinecone Router](https://github.com/pinecone-router/router)** - A lightweight, powerful and flexible routing solution for single-page applications. It integrates seamlessly with Alpine.js, making SPA navigation simple and intuitive.
+
+- **[Bootstrap Icons](https://icons.getbootstrap.com/)** - An official open-source icon library from the Bootstrap team. It gives you over a thousand finely crafted SVG icons to use in your projects.
+
+- **[NProgress](https://ricostacruz.com/nprogress/)** - A slim progress bar inspired by the YouTube and Medium's ones. It's a great way to indicate some activity when transitioning between pages or during AJAX requests.
+
+- Integrated **[SVGR](https://react-svgr.com/)** - Turn your SVGs into React components. This allows you to manipulate SVG elements and properties just like React components, making your SVGs more versatile and interactive.
+
+---
+
+Feel free to integrate this into your `README.md` file!
 ## Project Structure and Configuration
 
 - The root directory for the project is `./src`.
