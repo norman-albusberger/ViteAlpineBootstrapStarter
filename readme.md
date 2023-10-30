@@ -10,26 +10,26 @@
 
 ## Table of Contents
 
-- [Vite Alpine Bootstrap Boilerplate](#vite-alpine-bootstrap-boilerplate)
-    * [🌟 Featured Technologies](#🌟-featured-technologies)
-    * [Features](#features)
-    * [Project Structure and Configuration](#project-structure-and-configuration)
-    * [Getting Started](#getting-started)
-        + [Prerequisites](#prerequisites)
-        + [Installation](#installation)
-    * [🚀 Using the Project Scripts](#🚀-using-the-project-scripts)
-        + [1. Development (`dev`)](#1-development-dev)
-        + [2. Build for Production (`build`)](#2-build-for-production-build)
-        + [3. Preview Production Build (`preview`)](#3-preview-production-build-preview)
-    * [🛠 Best Practices with PhpStorm/WebStorm/IntelliJ IDEA](#🛠-best-practices-with-phpstormwebstormintellij-idea)
-    * [Usage & Documentation](#usage--documentation)
-    * [Contributing](#contributing)
-    * [License](#license)
-    * [Contact](#contact)
-
+<!-- TOC -->
+  * [Featured Technologies](#featured-technologies)
+  * [Features](#features)
+  * [Project Structure and Configuration](#project-structure-and-configuration)
+  * [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+    * [🚀 Using the Project Scripts](#-using-the-project-scripts)
+      * [1. Development (`dev`)](#1-development-dev)
+      * [2. Build for Production (`build`)](#2-build-for-production-build)
+      * [3. Preview Production Build (`preview`)](#3-preview-production-build-preview)
+    * [Best Practices with PhpStorm WebStorm IntelliJ IDEA](#best-practices-with-phpstorm-webstorm-intellij-idea)
+  * [Usage & Documentation](#usage--documentation)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Contact](#contact)
+<!-- TOC -->
 ---
 
-## 🌟 Featured Technologies
+## Featured Technologies
 
 <table>
   <tr>
@@ -166,7 +166,7 @@ After building your project, this script lets you preview the production-ready v
 
 ---
 
-### 🛠 Best Practices with PhpStorm/WebStorm/IntelliJ IDEA
+### Best Practices with PhpStorm WebStorm IntelliJ IDEA
 
 1. **Vite Integration:** As of my last update, JetBrains IDEs (like PhpStorm/WebStorm) have started to provide better support for Vite. Ensure your IDE is updated to the latest version.
 
