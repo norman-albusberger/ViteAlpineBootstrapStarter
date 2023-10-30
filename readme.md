@@ -1,5 +1,15 @@
 # Vite Alpine Bootstrap Boilerplate
 
+![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![npm](https://img.shields.io/npm/dt/YOUR_NPM_PACKAGE_NAME)
+![GitHub stars](https://img.shields.io/github/stars/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![GitHub forks](https://img.shields.io/github/forks/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![GitHub issues](https://img.shields.io/github/issues/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![npm](https://img.shields.io/npm/v/vite)
+![npm](https://img.shields.io/npm/v/bootstrap)
+
+
 This boilerplate is a starting point for web applications utilizing Vite, AlpineJS, and Bootstrap. It comes pre-configured with a suite of development tools and libraries to speed up your development process.
 
 ## Features
