@@ -67,7 +67,6 @@ This boilerplate is a starting point for web applications utilizing Vite, Alpine
 
 ---
 
-Feel free to integrate this into your `README.md` file!
 ## Project Structure and Configuration
 
 - The root directory for the project is `./src`.
