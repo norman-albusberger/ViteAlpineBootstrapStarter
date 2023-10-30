@@ -105,13 +105,69 @@ This boilerplate is a starting point for web applications utilizing Vite, Alpine
    ```sh
    npm run dev
    ```
-### Building for Production
 
-To create an optimized version of your app, use:
+### 🚀 Using the Project Scripts
 
-```sh
-npm run build
-```
+#### 1. Development (`dev`)
+
+This script starts the Vite development server, which provides hot module replacement. It's perfect for active development.
+
+- **Command:** `npm run dev`
+- **Usage:**
+
+    1. Navigate to your project directory in your terminal.
+    2. Run the above command.
+    3. Open your browser to the displayed local server URL (usually `http://localhost:3000`).
+    4. Start developing! Any changes you make to your files will be instantly reflected in the browser.
+
+#### 2. Build for Production (`build`)
+
+This script compiles and optimizes your project for production, generating all static assets in the `dist` directory.
+
+- **Command:** `npm run build`
+- **Usage:**
+
+    1. In your terminal, navigate to your project directory.
+    2. Run the above command.
+    3. Once completed, all your optimized assets will be in the `dist` folder, ready for deployment.
+
+#### 3. Preview Production Build (`preview`)
+
+After building your project, this script lets you preview the production-ready version locally.
+
+- **Command:** `npm run preview`
+- **Usage:**
+
+    1. First, ensure you've run the build command.
+    2. Navigate to your project directory in your terminal.
+    3. Run the above command.
+    4. Open your browser to the displayed local server URL to see the built version of your site.
+
+---
+
+### 🛠 Best Practices with PhpStorm/WebStorm/IntelliJ IDEA
+
+1. **Vite Integration:** As of my last update, JetBrains IDEs (like PhpStorm/WebStorm) have started to provide better support for Vite. Ensure your IDE is updated to the latest version.
+
+2. **NPM Scripts Tool Window:** Use the NPM scripts tool window in the IDE to easily run, debug, or stop any of your project scripts (`dev`, `build`, `preview`). This avoids the need to always use the terminal.
+
+3. **Hot Module Replacement (HMR):** When using the `dev` script, your IDE will recognize HMR. This means you can see changes instantly in the browser without a full page reload.
+
+4. **Use Built-in Terminal:** PhpStorm/WebStorm offers an integrated terminal. It's beneficial to run commands without leaving the IDE.
+
+5. **Version Control:** If you're using Git (or any VCS), the JetBrains suite offers robust VCS tools. Commit, push, pull, and manage branches directly from the IDE.
+
+6. **Live Edit:** WebStorm and PhpStorm have a "Live Edit" feature. While Vite provides its HMR, Live Edit can be handy for other files or in conjunction with browser tools.
+
+7. **Debugging:** Use the built-in debugger to set breakpoints and inspect variables/values in real-time.
+
+8. **Code Inspections:** JetBrains IDEs offer powerful code inspections. They'll provide suggestions, detect issues, and even offer quick fixes.
+
+9. **Plugins:** The IDE's marketplace is vast. Consider adding plugins that further enhance your development workflow, especially those related to JavaScript, Vite, or any other technologies you're using.
+
+10. **Keymaps & Shortcuts:** Learn and customize keymaps and shortcuts to speed up your development process.
+
+---
 
 ## Usage & Documentation
 
