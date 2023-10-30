@@ -1,10 +1,14 @@
 import path from "path";
-
+import copy from 'rollup-plugin-copy';
 
 export default {
     root: path.resolve(__dirname, './src'),
+    server: {
+        port: 3000,
+        hot: true
+    },
     base: "",
-    resolve:{
+    resolve: {
         alias: {
             '@scss': `${path.resolve(__dirname, 'src/assets/scss')}`,
             '@img': `${path.resolve(__dirname, 'src/assets/img')}`,
@@ -14,5 +18,15 @@ export default {
     },
     build: {
         outDir: path.join(__dirname, "dist"),
+        rollupOptions: {
+            plugins: [
+                copy({
+                    targets: [
+                        { src: 'src/layouts', dest: 'dist' },
+                        { src: 'src/pages', dest: 'dist' }
+                    ]
+                })
+            ]
+        }
     },
 }
