@@ -168,7 +168,6 @@ After building your project, this script lets you preview the production-ready v
     3. Run the above command.
     4. Open your browser to the displayed local server URL to see the built version of your site.
 
----
 
 ### Best Practices with PhpStorm WebStorm IntelliJ IDEA
 
@@ -192,11 +191,6 @@ After building your project, this script lets you preview the production-ready v
 
 10. **Keymaps & Shortcuts:** Learn and customize keymaps and shortcuts to speed up your development process.
 
----
-
-Certainly! Here's a section for your `README.md` that explains your SCSS structure:
-
----
 
 ## SCSS Structure
 
@@ -218,9 +212,6 @@ The project adopts a modular SCSS structure to ensure maintainability, scalabili
 
 - Modularize your styles as much as possible. This ensures that as the project grows, the styles remain manageable.
 
----
-
-You can add or modify this as per your project's specific needs. But this should serve as a solid starting point to explain your SCSS structure to future developers or contributors.
 
 ## Usage & Documentation
 
