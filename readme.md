@@ -11,6 +11,8 @@
 ## Table of Contents
 
 <!-- TOC -->
+* [Vite Alpine Bootstrap Boilerplate](#vite-alpine-bootstrap-boilerplate)
+  * [Table of Contents](#table-of-contents)
   * [Featured Technologies](#featured-technologies)
   * [Features](#features)
   * [Project Structure and Configuration](#project-structure-and-configuration)
@@ -22,6 +24,8 @@
       * [2. Build for Production (`build`)](#2-build-for-production-build)
       * [3. Preview Production Build (`preview`)](#3-preview-production-build-preview)
     * [Best Practices with PhpStorm WebStorm IntelliJ IDEA](#best-practices-with-phpstorm-webstorm-intellij-idea)
+  * [SCSS Structure](#scss-structure)
+    * [Recommendations:](#recommendations)
   * [Usage & Documentation](#usage--documentation)
   * [Contributing](#contributing)
   * [License](#license)
@@ -189,6 +193,34 @@ After building your project, this script lets you preview the production-ready v
 10. **Keymaps & Shortcuts:** Learn and customize keymaps and shortcuts to speed up your development process.
 
 ---
+
+Certainly! Here's a section for your `README.md` that explains your SCSS structure:
+
+---
+
+## SCSS Structure
+
+The project adopts a modular SCSS structure to ensure maintainability, scalability, and ease of understanding. Here's a breakdown of the SCSS organization:
+
+- 📁 **scss**: This is the root directory for all our styles.
+
+    - **_bootstrap.scss**: This file contains all the Bootstrap SCSS imports. By organizing it this way, we can ensure a systematic and selective import of only the Bootstrap components we need, optimizing performance and reducing bloat.
+
+    - **custom.scss**: All custom styles specific to the project go here. This ensures that our own styles are kept separate from any third-party styles, making it easier to manage and understand the uniqueness of our design.
+
+    - **styles.scss**: The central file where everything comes together. This file imports all the necessary SCSS files, starting from Bootstrap, variables, to custom styles, ensuring a seamless cascade of styles.
+
+    - **vars.scss**: Here's where we override Bootstrap's default variables or define our own. By keeping our variable overrides in a separate file, we ensure that our theming and branding choices are centralized and can be updated easily without sifting through other styles.
+
+### Recommendations:
+
+- Always keep third-party styles (like Bootstrap) and custom styles separate. This makes updates, troubleshooting, and customizations much easier.
+
+- Modularize your styles as much as possible. This ensures that as the project grows, the styles remain manageable.
+
+---
+
+You can add or modify this as per your project's specific needs. But this should serve as a solid starting point to explain your SCSS structure to future developers or contributors.
 
 ## Usage & Documentation
 

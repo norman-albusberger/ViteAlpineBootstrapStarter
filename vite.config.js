@@ -22,11 +22,14 @@ export default {
             plugins: [
                 copy({
                     targets: [
-                        { src: 'src/layouts', dest: 'dist' },
-                        { src: 'src/pages', dest: 'dist' }
+                        {src: 'src/layouts', dest: 'dist'},
+                        {src: 'src/pages', dest: 'dist'}
                     ]
                 })
             ]
         }
+    },
+    optimizeDeps: {
+        exclude: ['alpinejs']
     },
 }

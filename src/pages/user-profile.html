@@ -1,0 +1,49 @@
+
+<section class="bg-light py-5">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-8">
+                <div x-data="profileData()">
+                    <!-- User Information Card -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            User Profile
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" x-text="user.name"></h5>
+                            <p class="card-text" x-text="user.bio"></p>
+                            <button @click="editMode = !editMode" class="btn btn-primary">Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <!-- Edit Profile Form (Hidden by default) -->
+                    <div x-show="editMode" class="mb-4">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" x-model="user.name">
+                        </div>
+                        <div class="form-group">
+                            <label for="bio">Bio</label>
+                            <textarea class="form-control" id="bio" x-model="user.bio"></textarea>
+                        </div>
+                        <button @click="updateProfile" class="btn btn-success">Save</button>
+                        <button @click="editMode = false" class="btn btn-danger">Cancel</button>
+                    </div>
+
+                    <!-- User's Posts List -->
+                    <div>
+                        <h4>User's Posts</h4>
+                        <ul class="list-group">
+                            <template x-for="post in posts" :key="post.id">
+                                <li class="list-group-item">
+                                    <h6 x-text="post.title"></h6>
+                                    <p x-text="post.content"></p>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
