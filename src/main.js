@@ -3,6 +3,7 @@ import '@scss/styles.scss'
 import 'pinecone-router-middleware-views'
 import PineconeRouter from 'pinecone-router'
 import Alpine from 'alpinejs'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 Alpine.plugin(PineconeRouter);
 Alpine.start();
