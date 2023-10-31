@@ -1,4 +1,4 @@
-![Header Image](URL_OF_THE_IMAGE)
+![Header Image](https://raw.githubusercontent.com/norman-albusberger/vite-alpine-bootstrap-boilerplate/main/src/public/img/header.img)
 # Vite Alpine Bootstrap Boilerplate
 
 ![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-boilerplate)
