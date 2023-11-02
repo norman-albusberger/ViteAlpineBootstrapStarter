@@ -220,6 +220,68 @@ The project adopts a modular SCSS structure to ensure maintainability, scalabili
 
     - **vars.scss**: Here's where we override Bootstrap's default variables or define our own. By keeping our variable overrides in a separate file, we ensure that our theming and branding choices are centralized and can be updated easily without sifting through other styles.
 
+Certainly, below is an example of a section you could add to your `README.md` to explain how to handle `.env` files in a Vite project:
+
+---
+
+## Using Environment Variables in Vite
+
+Vite provides built-in support for environment variables, which allows you to define variables that can be accessed within your application. Here's how to use them:
+
+### Setting Up Environment Variables
+
+1. **Create `.env` files**: In the root of your project, you can create files named `.env`, `.env.local`, `.env.[mode]`, and `.env.[mode].local`. The `[mode]` can be replaced by the name of your environment (e.g., `development`, `production`, `test`, etc.). The `.local` variants are loaded additionally and not checked into version control.
+
+2. **Prefixing**: Environment variables must be prefixed with `VITE_` to be exposed to your Vite project. This is a security feature to prevent accidental exposure of env variables to the client-side code.
+
+   Example `.env` file content:
+   ```plaintext
+   VITE_API_KEY=your_api_key_here
+   VITE_OTHER_VARIABLE=some_value
+   ```
+   
+The boilerplate consists of two data binding examples which make use of https://newsapi.org and https://rapidapi.com/SAdrian/api/moviesdatabase/. Both require an API Key.
+To view the examples you need to obtain an API key from both services and create a `.env.local` (mind the trailing dot) file with the following content:
+
+`
+VITE_NEWS_API_KEY=YOUR_API_KEY_FROM_NEWS_ORG
+VITE_MOVIE_API_KEY=YOUR_API_KEY_FROM_RAPIDAPI
+
+`
+
+3. **Accessing Variables in Code**: Use `import.meta.env` to access the environment variables in your JavaScript code.
+   ```javascript
+   console.log(import.meta.env.VITE_API_KEY); // Outputs: your_api_key_here
+   ```
+
+### Best Practices
+
+- **Local Environment Variables**: Use `.env.local` for sensitive variables and personal tokens that should not be shared with others.
+- **Shared Environment Variables**: Use `.env` for shared environment variables that are not sensitive.
+- **Git Ignore**: Add `.env.local` and any other sensitive env files to your `.gitignore` to ensure they are not checked into version control.
+
+### Adding Environment Variables to `.gitignore`
+
+To prevent committing your environment variables to Git, add the following lines to your `.gitignore` file:
+
+```
+# local env files
+.env.local
+.env.*.local
+```
+
+### Loading Environment Variables for Production
+
+For production environments, you need to set these environment variables in your hosting provider's configuration panel. This could be in the settings of services like Vercel, Netlify, Heroku, or in your CI/CD pipelines.
+
+### Documentation for Contributors
+
+If you have contributors on your project, document the necessary environment variables in your `README.md` without including the sensitive keys themselves. Provide instructions on how to set up their own `.env` files.
+
+---
+
+This section provides a comprehensive overview of how to manage environment variables in a Vite project and can be included in your project documentation to help other developers understand how to configure their environment correctly.
+
 ### Recommendations:
 
 - Always keep third-party styles (like Bootstrap) and custom styles separate. This makes updates, troubleshooting, and customizations much easier.

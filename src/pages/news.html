@@ -1,0 +1,24 @@
+<!-- News Page HTML -->
+<div x-data="NewsManager()" x-init="init()">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-4">Latest News</h1>
+            </div>
+        </div>
+        <div class="row">
+            <template x-for="article in articles" :key="article.title">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img x-bind:src="article.urlToImage" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title" x-text="article.title"></h5>
+                            <p class="card-text" x-text="article.content"></p>
+                            <p class="card-text"><small class="text-muted" x-text="article.published_at"></small></p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
