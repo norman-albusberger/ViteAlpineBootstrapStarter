@@ -12,24 +12,28 @@ $font-family-base: $base-font-family;
 $font-size-base: .9rem;
 
 // ==================== Colors ========================
-/// Earthy Pastel Colors
-$pastel-primary:   #41D1FF;  // bright blue
-$pastel-secondary: #FFA800;  // goldish-orange
-$pastel-info:      #FFEA83;  // light yellow
-$pastel-success:   #9EE493;  // pale leaf green (unchanged for variation)
-$pastel-warning:   #FFDD35;  // intense yellow
-$pastel-danger:    #BD34FE;  // vibrant purple
-$pastel-light:     #F1F1E1;  // off-white (unchanged for contrast)
-$pastel-dark:      #6E8C8B;  // muted teal (unchanged for depth)
-// Assign the pastel colors to Bootstrap's color variables
-$primary:   $pastel-primary;
-$secondary: $pastel-secondary;
-$info:      $pastel-info;
-$success:   $pastel-success;
-$warning:   $pastel-warning;
-$danger:    $pastel-danger;
-$light:     $pastel-light;
-$dark:      $pastel-dark;
+// Your theme colors
+$theme-colors: (
+        "primary":      #043cfd,
+        "secondary":      #86eebd,
+        "success":      #00ff22,
+        "info":      #563b86,
+        "warning":      #fffb00,
+        "danger":      #ff1100,
+        "light": #e5e5e5,
+        "dark":      #a94afe,
+);
+
+// Optionally, if you want to define colors individually
+$primary:    map-get($theme-colors, "primary");
+$secondary:  map-get($theme-colors, "secondary");
+$success:    map-get($theme-colors, "success");
+$info:       map-get($theme-colors, "info");
+$warning:    map-get($theme-colors, "warning");
+$danger:     map-get($theme-colors, "danger");
+$light:      map-get($theme-colors, "light");
+$dark:       map-get($theme-colors, "dark");
+
 // ==================== Colors ========================
 
 // ==================== Utilities ========================

@@ -7,7 +7,7 @@
             </div>
         </div>
         <div class="row">
-            <template x-for="article in articles" :key="article.title">
+            <template x-for="(article,index) in articles" :key="index">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
                         <img x-bind:src="article.urlToImage" class="card-img-top" alt="...">

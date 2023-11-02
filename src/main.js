@@ -35,8 +35,8 @@ document.addEventListener('alpine:initialized', () => {
  * with reactive frameworks, ensuring a smooth user experience without manual reinitialization or complex
  * event handling to maintain interactive component functionality.
  */
-// Assuming all your dynamic content that requires popovers is within a container with the ID 'dynamic-content'
 function initBootstrapComponents() {
+
     // Initialize tooltips
     let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]:not(.tooltip-initialized)'));
     tooltipTriggerList.forEach(function (tooltipTriggerEl) {
@@ -68,5 +68,3 @@ observer.observe(document.body, {childList: true, subtree: true});
 
 // Initial initialization call
 initBootstrapComponents();
-
-console.log(Alpine)
