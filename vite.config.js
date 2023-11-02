@@ -30,6 +30,6 @@ export default {
         }
     },
     optimizeDeps: {
-        exclude: ['alpinejs']
+        exclude: ['alpinejs','axios']
     },
 }

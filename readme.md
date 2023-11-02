@@ -11,28 +11,7 @@
 
 ## Table of Contents
 
-<!-- TOC -->
-* [Vite Alpine Bootstrap Boilerplate](#vite-alpine-bootstrap-boilerplate)
-  * [Table of Contents](#table-of-contents)
-  * [Featured Technologies](#featured-technologies)
-  * [Features](#features)
-  * [Project Structure and Configuration](#project-structure-and-configuration)
-  * [Getting Started](#getting-started)
-    * [Prerequisites](#prerequisites)
-    * [Installation](#installation)
-    * [🚀 Using the Project Scripts](#-using-the-project-scripts)
-      * [1. Development (`dev`)](#1-development-dev)
-      * [2. Build for Production (`build`)](#2-build-for-production-build)
-      * [3. Preview Production Build (`preview`)](#3-preview-production-build-preview)
-    * [Best Practices with PhpStorm WebStorm IntelliJ IDEA](#best-practices-with-phpstorm-webstorm-intellij-idea)
-  * [SCSS Structure](#scss-structure)
-    * [Recommendations:](#recommendations)
-  * [Usage & Documentation](#usage--documentation)
-  * [Contributing](#contributing)
-  * [License](#license)
-  * [Contact](#contact)
-<!-- TOC -->
----
+--
 
 ## Featured Technologies
 
@@ -131,6 +110,40 @@ This boilerplate is a starting point for web applications utilizing Vite, Alpine
    ```sh
    npm run dev
    ```
+## Features
+
+### Component Autoloading
+
+The boilerplate implements a component autoloading mechanism that simplifies the development workflow and keeps the codebase clean and maintainable. 
+
+To create a new component, simply add a new file in the `components` directory:
+
+```javascript
+// File: components/ExampleComponent.js
+export default function ExampleComponent() {
+    return {
+        // Alpine.js component data and methods
+    };
+}
+```
+The autoloader will take care of the rest, ensuring that ExampleComponent is available throughout your application.
+
+#### How it Works:
+
+- **Convention Over Configuration**: Each Alpine.js component is placed in its own file, named after the component itself. When a component is needed, the autoloader dynamically imports it based on the naming convention, reducing the need for explicit imports or initialization code.
+
+- **Automatic Initialization**: Components are automatically initialized and made available globally as soon as they are added to the designated components directory. This is achieved through a combination of dynamic imports and Alpine.js's powerful reactivity system.
+
+- **Streamlined Development**: This autoloading approach reduces boilerplate, making it easier to scale the project with additional components. Developers can add, remove, or modify components without touching a centralized registration file or script.
+
+#### Benefits:
+
+- **Improved Productivity**: Developers can create new components rapidly without manual setup steps, leading to a smoother development experience and faster iteration.
+
+- **Maintainable Codebase**: By isolating each component into its own file and relying on a consistent naming convention, the project remains organized and easier to navigate.
+
+- **Scalability**: As the project grows, the autoloader can handle an increasing number of components without additional overhead or configuration, ideal for large-scale applications.
+
 
 ### 🚀 Using the Project Scripts
 

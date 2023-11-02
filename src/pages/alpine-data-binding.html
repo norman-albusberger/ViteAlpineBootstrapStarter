@@ -1,0 +1,43 @@
+<style>
+    /* Custom CSS */
+    .image-40vh {
+        height: 60vh; /* 40% of the viewport height */
+        object-fit: cover; /* Cover the area without stretching the image */
+    }
+</style>
+<div x-data="movieCarousel()" x-init="fetchMovies">
+       <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+           <!-- Carousel indicators -->
+           <ol class="carousel-indicators pt-5">
+               <template x-for="(movie, index) in movies" :key="index">
+                   <button type="button" :data-bs-target="'#movieCarousel'" :data-bs-slide-to="index" x-bind:class="{ 'active': activeSlide === index }"  @click="activeSlide = index"></button>
+
+                   <li :data-bs-target="'#movieCarousel'" :data-bs-slide-to="index" x-bind:class="{ 'active': activeSlide === index }" @click="activeSlide = index"></li>
+               </template>
+           </ol>
+
+           <!-- Carousel items -->
+           <div class="carousel-inner">
+               <template x-for="(movie, index) in movies" :key="index">
+                   <div class="carousel-item" x-bind:class="{ 'active': activeSlide === index }">
+                       <div class="row justify-content-center align-items-center h-100">
+                           <!-- Movie Item -->
+                           <div class="col-12 col-md-8 col-lg-6">
+                               <!-- Apply the custom class to your image -->
+                               <img x-bind:src="movie.primaryImage.url" x-bind:alt="movie.title" class="img-fluid d-block mx-auto image-40vh">
+                               <div class="carousel-caption d-none d-md-block">
+                                   <h5 x-text="movie.titleText.text" class="text-center"></h5>
+                                   <p x-text="movie.type" class="text-center"></p>
+                                   <p class="text-center">Ranking: <span x-text="movie.position"></span></p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </template>
+           </div>
+
+
+
+           <!-- Carousel controls ... -->
+    </div>
+</div>

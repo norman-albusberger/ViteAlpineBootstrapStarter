@@ -2,19 +2,15 @@ import '@scss/styles.scss'
 //Progress Bar - The style is added in src/assets/scss/custom.scss
 import 'pinecone-router-middleware-views'
 import PineconeRouter from 'pinecone-router'
-import Alpine from 'alpinejs'
 import * as bootstrap from 'bootstrap';
 
-// Import highlight.js
-
 Alpine.plugin(PineconeRouter);
-// Define your Alpine component
-
-//Nprogress bar and spinner
-import './loader.js'
-
 Alpine.start();
 
+// Define your Alpine component
+import { Alpine } from './utils/component-autoloader.js'
+//Nprogress bar and spinner
+import './loader.js'
 document.addEventListener('alpine:initialized', () => {
     window.PineconeRouter.settings.viewSelector = ""
     window.PineconeRouter.settings.basePath = '/' // set the base for the URL, doesn't work with hash routing
@@ -51,7 +47,7 @@ function initBootstrapComponents() {
     // Initialize popovers
     let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]:not(.popover-initialized)'));
     popoverTriggerList.forEach(function (popoverTriggerEl) {
-        new bootstrap.Popover(popoverTriggerEl,{});
+        new bootstrap.Popover(popoverTriggerEl, {});
         popoverTriggerEl.classList.add('popover-initialized');
     });
 }
@@ -68,9 +64,9 @@ const observer = new MutationObserver((mutations) => {
 });
 
 // Start observing the document body for DOM changes
-observer.observe(document.body, { childList: true, subtree: true });
+observer.observe(document.body, {childList: true, subtree: true});
 
 // Initial initialization call
 initBootstrapComponents();
 
-
+console.log(Alpine)
