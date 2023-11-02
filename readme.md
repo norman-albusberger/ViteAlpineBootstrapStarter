@@ -220,8 +220,6 @@ The project adopts a modular SCSS structure to ensure maintainability, scalabili
 
     - **vars.scss**: Here's where we override Bootstrap's default variables or define our own. By keeping our variable overrides in a separate file, we ensure that our theming and branding choices are centralized and can be updated easily without sifting through other styles.
 
-Certainly, below is an example of a section you could add to your `README.md` to explain how to handle `.env` files in a Vite project:
-
 ---
 
 ## Using Environment Variables in Vite
