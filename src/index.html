@@ -8,23 +8,16 @@
 </head>
 <body class="d-flex flex-column h-100">
 <!-- Templates -->
-<div x-data>
+<div x-data >
     <template x-route="/"  x-view="['/layouts/base.html', {path:'/pages/home.html', selector:'#content'}]">></template>
     <template x-route="/about" x-view="['/layouts/base.html', {path:'/pages/about.html', selector:'#content'}]"></template>
     <template x-route="/contact" x-view="['/layouts/base.html', {path:'/pages/contact.html', selector:'#content'}]"></template>
+    <template x-route="/bootstrap-examples" x-view="['/layouts/base.html', {path:'/pages/bootstrap-examples.html', selector:'#content'}]"></template>
+    <template x-route="/alpine-examples" x-view="['/layouts/base.html', {path:'/pages/alpine-examples.html', selector:'#content'}]"></template>
     <!-- the error pages handler -->
     <template x-route="notfound"  x-view="['/layouts/base.html', {path:'/pages/404.html', selector:'#content'}]"></template>
-    <!-- Auth pages -->
-    <template x-route="register"
-            x-view="['/layouts/auth.html', {path:'/pages/register.html', selector:'#content'}]">
-    </template>
-    <template x-route="login"
-              x-view="['/layouts/auth.html', {path:'/pages/login.html', selector:'#content'}]">
-    </template>
-    <template x-route="user-profile"
-              x-view="['/layouts/base.html', {path:'/pages/user-profile.html', selector:'#content'}]">
-    </template>
 </div>
+
 <!-- Templates -->
 <!-- Container for the app -->
 <div id="app">

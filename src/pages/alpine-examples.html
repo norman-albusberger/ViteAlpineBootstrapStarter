@@ -1,0 +1,132 @@
+<div class="container py-5">
+    <h1 class="mb-4">Alpine.js with Bootstrap - Example Page</h1>
+
+    <!-- Text Binding Example -->
+    <section class="bg-light p-4 my-4 rounded">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Text Binding</h2>
+                <div x-data="{ message: 'Hello, World!' }" class="border p-3">
+                    <span x-text="message"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>HTML Code</h2>
+                <pre class="code-container"><code class="language-html">&lt;div x-data="{ message: 'Hello, World!' }"&gt;
+    &lt;span x-text="message"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Handling Example -->
+    <section class="bg-light p-4 my-4 rounded">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Event Handling</h2>
+                <div x-data="{ count: 0 }" class="border p-3">
+                    <button @click="count++" class="btn btn-primary">Click me</button>
+                    <span x-text="'You have clicked me ' + count + ' times.'"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>HTML Code</h2>
+                <pre class="code-container"><code class="language-html">>&lt;div x-data="{ count: 0 }"&gt;
+    &lt;button @click="count++" class="btn btn-primary"&gt;Click me&lt;/button&gt;
+    &lt;span x-text="'You have clicked me ' + count + ' times.'"&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Looping Example -->
+    <section class="bg-light p-4 my-4 rounded">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Looping</h2>
+                <div x-data="{ items: ['Item 1', 'Item 2', 'Item 3'] }" class="border p-3">
+                    <template x-for="item in items" :key="item">
+                        <div x-text="item"></div>
+                    </template>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>HTML Code</h2>
+                <pre class="code-container"><code class="language-html">&lt;div x-data="{ items: ['Item 1', 'Item 2', 'Item 3'] }"&gt;
+    &lt;template x-for="item in items" :key="item"&gt;
+        &lt;div x-text="item"&gt;&lt;/div&gt;
+    &lt;/template&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 4: Conditional Rendering -->
+    <section class="row mb-4 bg-light p-4 rounded">
+        <div class="col-lg-6 mb-3">
+            <h2>Conditional Rendering</h2>
+            <!-- Alpine.js interactive example -->
+            <div x-data="{ showSecret: false }">
+                <button @click="showSecret = !showSecret" class="btn btn-warning mb-3">
+                    Toggle Secret Message
+                </button>
+                <div x-show="showSecret" class="alert alert-success">
+                    This is a secret message!
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2>HTML Code</h2>
+            <div class="code-container">
+<pre><code class="language-html">&lt;div x-data="{ showSecret: false }"&gt;
+    &lt;button @click="showSecret = !showSecret" class="btn btn-warning mb-3"&gt;
+        Toggle Secret Message
+    &lt;/button&gt;
+    &lt;div x-show="showSecret" class="alert alert-success"&gt;
+        This is a secret message!
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example 5: Form Input Binding -->
+    <section class="row mb-4 bg-light p-4 rounded">
+        <div class="col-lg-6 mb-3">
+            <h2>Form Input Binding</h2>
+            <!-- Alpine.js interactive example -->
+            <div x-data="{ formData: { username: '', email: '' } }">
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" id="username" x-model="formData.username" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" x-model="formData.email" class="form-control">
+                    </div>
+                    <div class="alert alert-info" x-text="`Username: ${formData.username}, Email: ${formData.email}`"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <h2>HTML Code</h2>
+            <div class="code-container">
+<pre><code class="language-html">&lt;div x-data="{ formData: { username: '', email: '' } }"&gt;
+    &lt;form&gt;
+        &lt;div class="mb-3"&gt;
+            &lt;label for="username" class="form-label"&gt;Username&lt;/label&gt;
+            &lt;input type="text" id="username" x-model="formData.username" class="form-control"&gt;
+        &lt;/div&gt;
+        &lt;div class="mb-3"&gt;
+            &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
+            &lt;input type="email" id="email" x-model="formData.email" class="form-control"&gt;
+        &lt;/div&gt;
+        &lt;div class="alert alert-info" x-text="`Username: ${formData.username}, Email: ${formData.email}`"&gt;&lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+</div>

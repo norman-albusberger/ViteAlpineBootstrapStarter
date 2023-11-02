@@ -1,5 +1,6 @@
 @import "~/nprogress/nprogress.css";
 
+//============= NProress overrides ===================
 #nprogress .bar {
   background: $color-loader;
   height: 3px;
@@ -16,6 +17,7 @@
   border-top-color: $color-loader;
   border-left-color: $color-loader;
 }
+//============= NProress overrides ===================
 
 
 // Custom component for profile picture on the homepage
@@ -91,6 +93,32 @@
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+}
+
+.code-container {
+  background-color: #282a36; /* Dark background */
+  color: #f8f8f2; /* Light text */
+  border-radius: 0.5em;
+  padding: 1em;
+  overflow-x: auto; /* For horizontal scrolling */
+}
+
+.code-container code {
+  display: block; /* Makes sure code is displayed in a block */
+  white-space: pre-wrap; /* Adds wrapping to code if needed */
+}
+
+/* Now some syntax highlighting mimicking */
+.code-container .token.operator {
+  color: #ff79c6;
+}
+
+.code-container .token.keyword {
+  color: #8be9fd;
+}
+
+.code-container .token.string {
+  color: #f1fa8c;
 }
 
 // Responsive styling for profile photo component

@@ -14,7 +14,6 @@
     "vite-plugin-svgr": "^3.2.0"
   },
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
     "alpinejs": "^3.13.0",
     "bootstrap": "^5.3.1",
     "bootstrap-icons": "^1.11.1",
