@@ -10,6 +10,37 @@
 ![npm](https://img.shields.io/npm/v/bootstrap)
 
 ## Table of Contents
+<!-- TOC -->
+* [Vite Alpine Bootstrap Boilerplate](#vite-alpine-bootstrap-boilerplate)
+  * [Table of Contents](#table-of-contents)
+  * [Featured Technologies](#featured-technologies)
+  * [Features](#features)
+  * [Project Structure and Configuration](#project-structure-and-configuration)
+  * [Getting Started](#getting-started)
+    * [Prerequisites](#prerequisites)
+    * [Installation](#installation)
+  * [Features](#features-1)
+    * [Component Autoloading](#component-autoloading)
+      * [How it Works:](#how-it-works)
+      * [Benefits:](#benefits)
+    * [🚀 Using the Project Scripts](#-using-the-project-scripts)
+      * [1. Development (`dev`)](#1-development-dev)
+      * [2. Build for Production (`build`)](#2-build-for-production-build)
+      * [3. Preview Production Build (`preview`)](#3-preview-production-build-preview)
+    * [Best Practices with PhpStorm WebStorm IntelliJ IDEA](#best-practices-with-phpstorm-webstorm-intellij-idea)
+  * [SCSS Structure](#scss-structure)
+  * [Using Environment Variables in Vite](#using-environment-variables-in-vite)
+    * [Setting Up Environment Variables](#setting-up-environment-variables)
+    * [Best Practices](#best-practices)
+    * [Adding Environment Variables to `.gitignore`](#adding-environment-variables-to-gitignore)
+    * [Loading Environment Variables for Production](#loading-environment-variables-for-production)
+    * [Documentation for Contributors](#documentation-for-contributors)
+    * [Recommendations:](#recommendations)
+  * [Usage & Documentation](#usage--documentation)
+  * [Contributing](#contributing)
+  * [License](#license)
+  * [Contact](#contact)
+<!-- TOC -->
 
 --
 
