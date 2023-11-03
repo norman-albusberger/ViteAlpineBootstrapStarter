@@ -240,7 +240,6 @@ To view the examples you need to obtain an API key from both services and create
 `
 VITE_NEWS_API_KEY=YOUR_API_KEY_FROM_NEWS_ORG
 VITE_MOVIE_API_KEY=YOUR_API_KEY_FROM_RAPIDAPI
-
 `
 
 3. **Accessing Variables in Code**: Use `import.meta.env` to access the environment variables in your JavaScript code.
