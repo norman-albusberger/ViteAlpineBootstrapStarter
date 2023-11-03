@@ -17,6 +17,7 @@
 | Vite | AlpineJS | Bootstrap | Pinecone Router | Bootstrap Icons |
 |:---:|:---:|:---:|:---:|:---:|
 | ![Vite](https://vitejs.dev/logo-with-shadow.png) | ![AlpineJS](https://alpinejs.dev/alpine_long.svg) | ![Bootstrap](https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png) | ![Pinecone Router](https://avatars.githubusercontent.com/u/83432496?s=200&v=4) | ![Bootstrap Icons](https://icons.getbootstrap.com/assets/img/icons-hero@2x.png) |
+
 Welcome to the Vite Alpine Bootstrap Boilerplate — a streamlined starting point for building web applications with a pre-configured stack of Vite, AlpineJS, and Bootstrap. It's crafted to expedite your development workflow with an array of integrated development tools and libraries.
 ## Features
 
