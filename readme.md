@@ -41,10 +41,10 @@ Welcome to the Vite Alpine Bootstrap Boilerplate — a streamlined starting poin
 - The root directory for the project is `./src`.
 - Output directory for the build is `./dist`.
 - Aliases have been set up for easy imports:
-   - `@scss` points to `src/assets/scss`.
-   - `@img` points to `src/assets/img`.
-   - `bootstrap` points to the Bootstrap module in `node_modules`.
-   - `~` points to the root of `node_modules`.
+    - `@scss` points to `src/assets/scss`.
+    - `@img` points to `src/assets/img`.
+    - `bootstrap` points to the Bootstrap module in `node_modules`.
+    - `~` points to the root of `node_modules`.
 
 
 ## Getting Started
@@ -78,7 +78,7 @@ Welcome to the Vite Alpine Bootstrap Boilerplate — a streamlined starting poin
 
 ### Component Autoloading
 
-The boilerplate implements a component autoloading mechanism that simplifies the development workflow and keeps the codebase clean and maintainable. 
+The boilerplate implements a component autoloading mechanism that simplifies the development workflow and keeps the codebase clean and maintainable.
 
 To create a new component, simply add a new file in the `components` directory:
 
@@ -201,7 +201,7 @@ Vite provides built-in support for environment variables, which allows you to de
    VITE_API_KEY=your_api_key_here
    VITE_OTHER_VARIABLE=some_value
    ```
-   
+
 The boilerplate consists of two data binding examples which make use of https://newsapi.org and https://rapidapi.com/SAdrian/api/moviesdatabase/. Both require an API Key.
 To view the examples you need to obtain an API key from both services and create a `.env.local` (mind the trailing dot) file with the following content:
 
