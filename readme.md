@@ -2,11 +2,11 @@
 
 ![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-boilerplate)
 ![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![GitHub stars](https://img.shields.io/github/stars/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![GitHub forks](https://img.shields.io/github/forks/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![GitHub issues](https://img.shields.io/github/issues/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![Vite](https://img.shields.io/npm/v/vite)
-![Bootstrap](https://img.shields.io/npm/v/bootstrap)
+![Vite Version](https://img.shields.io/badge/vite-4.4.5-brightgreen)
+![Alpine.js Version](https://img.shields.io/badge/alpine.js-3.13.0-blue)
+![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.3.1-purple)
+
+
 
 ## Why Vite Alpine Bootstrap Boilerplate?
 In today's fast-paced digital world, efficiency is key to web application development. The Vite Alpine Bootstrap Boilerplate provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this boilerplate.
@@ -47,7 +47,7 @@ In today's fast-paced digital world, efficiency is key to web application develo
 --
 
 ## Technologies and Structure
-This boilerplate combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, we ensure developers have everything they need to start a project right away.
+This boilerplate combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, I ensure developers have everything they need to start a project right away.
 
 | Vite | AlpineJS | Bootstrap | Pinecone Router | Bootstrap Icons |
 |:---:|:---:|:---:|:---:|:---:|
@@ -208,15 +208,15 @@ After building your project, this script lets you preview the production-ready v
 
 The project adopts a modular SCSS structure to ensure maintainability, scalability, and ease of understanding. Here's a breakdown of the SCSS organization:
 
-- 📁 **scss**: This is the root directory for all our styles.
+- 📁 **scss**: This is the root directory for all the styles.
 
     - **_bootstrap.scss**: This file contains all the Bootstrap SCSS imports. By organizing it this way, we can ensure a systematic and selective import of only the Bootstrap components we need, optimizing performance and reducing bloat.
 
-    - **custom.scss**: All custom styles specific to the project go here. This ensures that our own styles are kept separate from any third-party styles, making it easier to manage and understand the uniqueness of our design.
+    - **custom.scss**: All custom styles specific to the project go here. This ensures that the own styles are kept separate from any third-party styles, making it easier to manage and understand the uniqueness of the design.
 
     - **styles.scss**: The central file where everything comes together. This file imports all the necessary SCSS files, starting from Bootstrap, variables, to custom styles, ensuring a seamless cascade of styles.
 
-    - **vars.scss**: Here's where we override Bootstrap's default variables or define our own. By keeping our variable overrides in a separate file, we ensure that our theming and branding choices are centralized and can be updated easily without sifting through other styles.
+    - **vars.scss**: Here's where we override Bootstrap's default variables or define the own. By keeping the variable overrides in a separate file, we ensure that the theming and branding choices are centralized and can be updated easily without sifting through other styles.
 
 ---
 
