@@ -5,8 +5,8 @@
 ![GitHub stars](https://img.shields.io/github/stars/norman-albusberger/vite-alpine-bootstrap-boilerplate)
 ![GitHub forks](https://img.shields.io/github/forks/norman-albusberger/vite-alpine-bootstrap-boilerplate)
 ![GitHub issues](https://img.shields.io/github/issues/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![npm](https://img.shields.io/npm/v/vite)
-![npm](https://img.shields.io/npm/v/bootstrap)
+![Vite](https://img.shields.io/npm/v/vite)
+![Bootstrap](https://img.shields.io/npm/v/bootstrap)
 
 ## Why Vite Alpine Bootstrap Boilerplate?
 In today's fast-paced digital world, efficiency is key to web application development. The Vite Alpine Bootstrap Boilerplate provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this boilerplate.
