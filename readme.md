@@ -1,3 +1,5 @@
+![Header Image](https://example.com/path/to/header-image.png)
+
 # Vite Alpine Bootstrap Boilerplate
 
 ![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-boilerplate)
