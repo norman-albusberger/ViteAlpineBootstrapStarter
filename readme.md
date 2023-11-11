@@ -1,4 +1,4 @@
-![Header Image](https://example.com/path/to/header-image.png)
+![Header Image](https://github.com/norman-albusberger/vite-alpine-bootstrap-boilerplate/blob/main/src/public/img/header.jpg?raw=true)
 
 # Vite Alpine Bootstrap Boilerplate
 
