@@ -1,9 +1,9 @@
-![Header Image](https://github.com/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter/blob/main/src/public/img/header.jpg?raw=true)
+![Header Image](https://github.com/norman-albusberger/ViteAlpineBootstrapStarter/blob/main/src/public/img/header.jpg?raw=true)
 
 # ViteAlpineBootstrapStarter
 
-![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter)
-![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter)
+![GitHub](https://img.shields.io/github/license/norman-albusberger/ViteAlpineBootstrapStarter)
+![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/ViteAlpineBootstrapStarter)
 ![Vite Version](https://img.shields.io/badge/vite-4.4.5-brightgreen)
 ![Alpine.js Version](https://img.shields.io/badge/alpine.js-3.13.0-blue)
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.3.1-purple)
