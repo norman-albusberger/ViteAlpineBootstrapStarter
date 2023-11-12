@@ -11,7 +11,7 @@
 
 
 ## Why ViteAlpineBootstrapStarter?
-In today's fast-paced digital world, efficiency is key to web application development. The Vite Alpine Bootstrap ViteAlpineBootstrapStarter provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this ViteAlpineBootstrapStarter.
+In today's fast-paced digital world, efficiency is key to web application development. The Starter template provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this template.
 
 ## Table of Contents
 <!-- TOC -->
