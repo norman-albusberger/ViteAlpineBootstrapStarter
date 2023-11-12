@@ -1,10 +1,16 @@
 
 <div class="container mt-5">
     <h1 class="mb-4">Simple Color Scheme Generator</h1>
+    <p>
+        Create your custom color scheme, copy it to the clipboard and replace the <code>$theme-colors</code> array in src/assets/scss/vars.scss.
+    </p>
+    <p>
+        Check out <a href="/bootstrap-examples">Bootstrap Examples</a> to see how it changes.
+    </p>
 </div>
 <div class="container py-4" x-data="colorSchemeGenerator()">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
             <!-- Card for color preview and controls -->
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -15,7 +21,7 @@
                     </button>
                 </div>
                 <div class="card-body">
-                    <div class="mb-3" x-text="output" style="white-space: pre;"></div>
+                    <code class="mb-3" x-text="output" style="white-space: pre;"></code>
                 </div>
                 <div class="card-footer">
                     <button class="btn btn-primary" x-on:click="generateRandomColors()">Generate Random Theme</button>
