@@ -1,21 +1,21 @@
-![Header Image](https://github.com/norman-albusberger/vite-alpine-bootstrap-boilerplate/blob/main/src/public/img/header.jpg?raw=true)
+![Header Image](https://github.com/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter/blob/main/src/public/img/header.jpg?raw=true)
 
-# Vite Alpine Bootstrap Boilerplate
+# ViteAlpineBootstrapStarter
 
-![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-boilerplate)
-![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/vite-alpine-bootstrap-boilerplate)
+![GitHub](https://img.shields.io/github/license/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter)
+![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/vite-alpine-bootstrap-ViteAlpineBootstrapStarter)
 ![Vite Version](https://img.shields.io/badge/vite-4.4.5-brightgreen)
 ![Alpine.js Version](https://img.shields.io/badge/alpine.js-3.13.0-blue)
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.3.1-purple)
 
 
 
-## Why Vite Alpine Bootstrap Boilerplate?
-In today's fast-paced digital world, efficiency is key to web application development. The Vite Alpine Bootstrap Boilerplate provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this boilerplate.
+## Why ViteAlpineBootstrapStarter?
+In today's fast-paced digital world, efficiency is key to web application development. The Vite Alpine Bootstrap ViteAlpineBootstrapStarter provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this ViteAlpineBootstrapStarter.
 
 ## Table of Contents
 <!-- TOC -->
-* [Vite Alpine Bootstrap Boilerplate](#vite-alpine-bootstrap-boilerplate)
+* [ViteAlpineBootstrapStarter](#ViteAlpineBootstrapStarter)
   * [Table of Contents](#table-of-contents)
   * [Featured Technologies](#featured-technologies)
   * [Features](#features)
@@ -49,7 +49,7 @@ In today's fast-paced digital world, efficiency is key to web application develo
 --
 
 ## Technologies and Structure
-This boilerplate combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, I ensure developers have everything they need to start a project right away.
+This ViteAlpineBootstrapStarter combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, I ensure developers have everything they need to start a project right away.
 
 | Vite | AlpineJS | Bootstrap | Pinecone Router | Bootstrap Icons |
 |:---:|:---:|:---:|:---:|:---:|
@@ -93,12 +93,12 @@ This boilerplate combines the speed of Vite, the simplicity of AlpineJS, and the
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/norman-albusberger/vite-alpine-bootstrap-boilerplate.git
+   git clone https://github.com/norman-albusberger/ViteAlpineBootstrapStarter.git
    ```
 
 2. Change directory:
    ```sh
-   cd vite-alpine-bootstrap-boilerplate
+   cd ViteAlpineBootstrapStarter
    ```
 
 3. Install dependencies:
@@ -114,7 +114,7 @@ This boilerplate combines the speed of Vite, the simplicity of AlpineJS, and the
 
 ### Component Autoloading
 
-The boilerplate implements a component autoloading mechanism that simplifies the development workflow and keeps the codebase clean and maintainable.
+The ViteAlpineBootstrapStarter implements a component autoloading mechanism that simplifies the development workflow and keeps the codebase clean and maintainable.
 
 To create a new component, simply add a new file in the `components` directory:
 
@@ -238,7 +238,7 @@ Vite provides built-in support for environment variables, which allows you to de
    VITE_OTHER_VARIABLE=some_value
    ```
 
-The boilerplate consists of two data binding examples which make use of https://newsapi.org and https://rapidapi.com/SAdrian/api/moviesdatabase/. Both require an API Key.
+The ViteAlpineBootstrapStarter consists of two data binding examples which make use of https://newsapi.org and https://rapidapi.com/SAdrian/api/moviesdatabase/. Both require an API Key.
 To view the examples you need to obtain an API key from both services and create a `.env.local` (mind the trailing dot) file with the following content:
 
 `
