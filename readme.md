@@ -8,8 +8,6 @@
 ![Alpine.js Version](https://img.shields.io/badge/alpine.js-3.13.0-blue)
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.3.1-purple)
 
-
-
 ## Why ViteAlpineBootstrapStarter?
 In today's fast-paced digital world, efficiency is key to web application development. The Starter template provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this template.
 
@@ -271,22 +269,8 @@ To prevent committing your environment variables to Git, add the following lines
 
 For production environments, you need to set these environment variables in your hosting provider's configuration panel. This could be in the settings of services like Vercel, Netlify, Heroku, or in your CI/CD pipelines.
 
-### Documentation for Contributors
 
-If you have contributors on your project, document the necessary environment variables in your `README.md` without including the sensitive keys themselves. Provide instructions on how to set up their own `.env` files.
-
----
-
-This section provides a comprehensive overview of how to manage environment variables in a Vite project and can be included in your project documentation to help other developers understand how to configure their environment correctly.
-
-### Recommendations:
-
-- Always keep third-party styles (like Bootstrap) and custom styles separate. This makes updates, troubleshooting, and customizations much easier.
-
-- Modularize your styles as much as possible. This ensures that as the project grows, the styles remain manageable.
-
-
-## Usage & Documentation
+## 3rd Party Docs
 
 - [Vite Documentation](https://vitejs.dev/guide/)
 - [AlpineJS Documentation](https://alpinejs.dev/start-here)
