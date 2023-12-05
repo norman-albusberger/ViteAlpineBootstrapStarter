@@ -1,6 +1,6 @@
 ![Header Image](https://github.com/norman-albusberger/ViteAlpineBootstrapStarter/blob/main/src/public/img/header.jpg?raw=true)
 
-# ViteAlpineBootstrapStarter
+# ViteAlpineBootstrapStarter for SPA
 
 ![GitHub](https://img.shields.io/github/license/norman-albusberger/ViteAlpineBootstrapStarter)
 ![GitHub last commit](https://img.shields.io/github/last-commit/norman-albusberger/ViteAlpineBootstrapStarter)
@@ -9,7 +9,7 @@
 ![Bootstrap Version](https://img.shields.io/badge/bootstrap-5.3.1-purple)
 
 ## Why ViteAlpineBootstrapStarter?
-In today's fast-paced digital world, efficiency is key to web application development. The Starter template provides developers with a comprehensive solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this template.
+In today's fast-paced digital world, efficiency is key to web application development. The Starter template provides developers with a comprehensive single page application solution to kickstart their projects more swiftly and efficiently. I believe in valuing the time of developers, aiming to minimize the effort in project initialization and configuration with this template.
 
 ## Table of Contents
 <!-- TOC -->
@@ -47,7 +47,7 @@ In today's fast-paced digital world, efficiency is key to web application develo
 --
 
 ## Technologies and Structure
-This ViteAlpineBootstrapStarter combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, I ensure developers have everything they need to start a project right away.
+This SPA starter template combines the speed of Vite, the simplicity of AlpineJS, and the flexibility of Bootstrap to create a robust foundation for web applications. By integrating tools like Pinecone Router and Bootstrap Icons, I ensure developers have everything they need to start a project right away.
 
 | Vite | AlpineJS | Bootstrap | Pinecone Router | Bootstrap Icons |
 |:---:|:---:|:---:|:---:|:---:|
