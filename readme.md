@@ -223,4 +223,3 @@ Norman Albusberger - [Portfolio](https://norman-albusberger.github.io)
 ---
 
 ### ⭐️ **If you find this project helpful, please consider giving it a star on GitHub!**
-```
