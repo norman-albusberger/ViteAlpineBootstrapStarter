@@ -1,0 +1,76 @@
+<div class="container py-5">
+    <h1 class="mb-4">Alpine.js with Bootstrap - Advanced Example with NProgress</h1>
+
+    <!-- Search Example with Pagination -->
+    <section class="bg-light p-4 my-4 rounded">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Live User Search with Pagination</h2>
+                <div x-data="liveSearch()" class="border p-3">
+                    <input type="text" x-model="query" placeholder="Search GitHub Users..." class="form-control mb-3">
+                    <button @click="search(1)" class="btn btn-primary mb-3" :disabled="loading">Search</button>
+                    <div x-show="loading" class="alert alert-info">Searching...</div>
+
+                    <!-- Display search results -->
+                    <div x-show="!loading && users.length > 0">
+                        <h3>Results:</h3>
+                        <ul class="list-group">
+                            <template x-for="user in users" :key="user.id">
+                                <li class="list-group-item">
+                                    <img :src="user.avatar_url" alt="User Avatar" class="img-thumbnail" width="50">
+                                    <a :href="user.html_url" target="_blank" x-text="user.login"></a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <!-- Display no results -->
+                    <div x-show="!loading && users.length === 0 && query.length > 0" class="alert alert-warning">
+                        No users found for "<span x-text="query"></span>".
+                    </div>
+
+                    <!-- Pagination Controls -->
+                    <nav x-show="!loading && totalResults > 0" aria-label="Search results pages">
+                        <ul class="pagination mt-4">
+                            <li class="page-item" :class="{ disabled: currentPage === 1 }">
+                                <a class="page-link" href="#" @click.prevent="prevPage">Previous</a>
+                            </li>
+                            <template x-for="page in paginationRange" :key="page">
+                                <li class="page-item" :class="{ active: currentPage === page }">
+                                    <a class="page-link" href="#" @click.prevent="goToPage(page)" x-text="page"></a>
+                                </li>
+                            </template>
+                            <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+                                <a class="page-link" href="#" @click.prevent="nextPage">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>HTML Code</h2>
+                <pre class="code-container"><code class="language-html">&lt;div x-data="liveSearch()"&gt;
+    &lt;input type="text" x-model="query" placeholder="Search GitHub Users..."&gt;
+    &lt;button @click="search(1)"&gt;Search&lt;/button&gt;
+    &lt;div x-show="loading"&gt;Searching...&lt;/div&gt;
+    &lt;div x-show="!loading && users.length &gt; 0"&gt;
+        &lt;ul&gt;
+            &lt;template x-for="user in users"&gt;
+                &lt;li&gt;
+                    &lt;img :src="user.avatar_url"&gt;
+                    &lt;a :href="user.html_url" x-text="user.login"&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/template&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;nav x-show="!loading && totalResults &gt; 0"&gt;
+        &lt;ul class="pagination"&gt;
+            &lt;!-- Pagination controls --&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+</div>

@@ -3,18 +3,16 @@ import '@scss/styles.scss'
 import 'pinecone-router-middleware-views'
 import PineconeRouter from 'pinecone-router'
 import * as bootstrap from 'bootstrap';
+// Define your Alpine component
+import { Alpine } from './utils/component-autoloader.js'
 
 Alpine.plugin(PineconeRouter);
 Alpine.start();
 
-// Define your Alpine component
-import { Alpine } from './utils/component-autoloader.js'
+
 //Nprogress bar and spinner
 import './loader.js'
-document.addEventListener('alpine:initialized', () => {
-    window.PineconeRouter.settings.viewSelector = ""
-    window.PineconeRouter.settings.basePath = '/' // set the base for the URL, doesn't work with hash routing
-});
+
 
 /**
  * Dynamic Bootstrap Component Initialization in a Single-Page Application (SPA)
