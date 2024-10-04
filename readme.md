@@ -112,10 +112,6 @@ This template is built on powerful and modern tools:
 
 ---
 
-Here’s an improved section highlighting the **Component Autoloader** feature of the **ViteAlpineBootstrapStarter** project:
-
----
-
 ## ⚡️ Component Autoloader
 
 One of the standout features of **ViteAlpineBootstrapStarter** is its **Component Autoloader**. This mechanism automatically detects and registers Alpine.js components without the need for manual imports, making the development process much smoother and less error-prone.
