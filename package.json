@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "sass": "^1.66.1",
-    "vite": "^4.4.5",
+    "vite": "latest",
     "vite-plugin-svgr": "^3.2.0"
   },
   "dependencies": {
@@ -21,7 +21,7 @@
     "chroma-js": "^2.4.2",
     "nprogress": "^0.2.0",
     "path": "^0.12.7",
-    "pinecone-router": "^3.1.1",
+    "pinecone-router": "^4.4.1",
     "pinecone-router-middleware-views": "^3.0.3",
     "rollup-plugin-copy": "^3.5.0"
   }
